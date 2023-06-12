@@ -37,7 +37,7 @@ def test_simple(driver):
     logger.info("timeout2")
     time.sleep(20)
     logger.info("/timeout2")
-
+    assert False
     logger.info("test finished")
 
 def attach_screenshot(driver):
