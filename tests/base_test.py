@@ -3,6 +3,7 @@
 # - logs and screenshots inside them
 
 import logging
+import time
 
 from pytest_zebrunner import attach_test_screenshot
 from pytest_zebrunner.zebrunner_logging import ZebrunnerHandler
@@ -26,8 +27,9 @@ def test_simple(driver):
 
     logger.info("Navigating to url: " + url)
     driver.get(url=url)
+    time.sleep(20)
     attach_screenshot(driver)
-
+    time.sleep(20)
 
 def attach_screenshot(driver):
     driver.save_screenshot("screenshot.png")
