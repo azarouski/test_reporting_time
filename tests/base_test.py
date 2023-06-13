@@ -16,14 +16,14 @@ logger = logging.getLogger(__name__)
 logger.addHandler(ZebrunnerHandler())
 logger.setLevel(logging.INFO)
 
-# Test data
-url = "https://www.google.com/"
-cookies_dialog_test = "Before you continue to Google Search"
-search_value = "Zebrunner"
+# # Test data
+# url = "https://www.google.com/"
+# cookies_dialog_test = "Before you continue to Google Search"
+# search_value = "Zebrunner"
 
 
 def test_simple(driver):
-    logger.info("'test_simple' test was started")
+    # logger.info("'test_simple' test was started")
 
     # logger.info("Navigating to url: " + url)
     # driver.get(url=url)
@@ -40,6 +40,6 @@ def test_simple(driver):
     # assert False
     logger.info("test finished")
 
-def attach_screenshot(driver):
-    driver.save_screenshot("screenshot.png")
-    attach_test_screenshot("screenshot.png")
+# def attach_screenshot(driver):
+#     driver.save_screenshot("screenshot.png")
+#     attach_test_screenshot("screenshot.png")
