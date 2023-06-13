@@ -19,8 +19,10 @@ def driver():
     options.set_capability("enableVideo", "true")
     ############################################################################################
 
-    driver = webdriver.Chrome(options=options)
-
+    driver = webdriver.Remote(
+        command_executor=zebrunner_selenium_grid,
+        options=options
+    )
 
     driver.implicitly_wait(10)
     # driver.maximize_window()
