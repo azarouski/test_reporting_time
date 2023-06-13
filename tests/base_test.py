@@ -28,16 +28,16 @@ def test_simple(driver):
     # logger.info("Navigating to url: " + url)
     # driver.get(url=url)
 
-    logger.info("timeout1")
-    time.sleep(20)
-    logger.info("/timeout1")
-
-    # attach_screenshot(driver)
-
-    logger.info("timeout2")
-    time.sleep(20)
-    logger.info("/timeout2")
-    assert False
+    # logger.info("timeout1")
+    # time.sleep(20)
+    # logger.info("/timeout1")
+    #
+    # # attach_screenshot(driver)
+    #
+    # logger.info("timeout2")
+    # time.sleep(20)
+    # logger.info("/timeout2")
+    # assert False
     logger.info("test finished")
 
 def attach_screenshot(driver):
