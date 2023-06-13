@@ -22,7 +22,7 @@ logger.setLevel(logging.INFO)
 # search_value = "Zebrunner"
 
 
-def test_simple():
+def test_simple(driver):
     # logger.info("'test_simple' test was started")
 
     # logger.info("Navigating to url: " + url)
