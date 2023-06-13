@@ -25,14 +25,14 @@ search_value = "Zebrunner"
 def test_simple(driver):
     logger.info("'test_simple' test was started")
 
-    logger.info("Navigating to url: " + url)
-    driver.get(url=url)
+    # logger.info("Navigating to url: " + url)
+    # driver.get(url=url)
 
     logger.info("timeout1")
     time.sleep(20)
     logger.info("/timeout1")
 
-    attach_screenshot(driver)
+    # attach_screenshot(driver)
 
     logger.info("timeout2")
     time.sleep(20)
