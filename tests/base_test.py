@@ -16,6 +16,7 @@ logger = logging.getLogger(__name__)
 logger.addHandler(ZebrunnerHandler())
 logger.setLevel(logging.INFO)
 
+
 # # Test data
 # url = "https://www.google.com/"
 # cookies_dialog_test = "Before you continue to Google Search"
@@ -39,6 +40,22 @@ def test_simple(driver):
     # logger.info("/timeout2")
     assert True
     logger.info("test finished")
+
+
+def test_simple1(driver):
+    assert True
+    logger.info("test1 finished")
+
+
+def test_simple2(driver):
+    assert True
+    logger.info("test2 finished")
+
+
+def test_simple3(driver):
+    assert True
+    logger.info("test3 finished")
+
 
 # def attach_screenshot(driver):
 #     driver.save_screenshot("screenshot.png")
